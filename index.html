@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="author" content="Jaydan Fleming">
+        <title>SolarSPELL Voice of America Website</title>
+        <meta name="description" content="A basic home page for the VOA module that contains access to three English-based courses.">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link rel="stylesheet" href="bootstrap/bootstrap-4.5.3-dist/css/bootstrap.min.css"> 
+
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body class="bg-light">
+        <script src="js/header.js"></script>
+
+        <main id="bottomMargin">
+            <article class="container-fluid">
+                <h1>Learning English</h1>
+                <div class="row">
+                    <div class="col-lg-4 col-md-5 col-sm-12 text-center">
+                        <a href="let's teach english/teachEng.html"><img src="assets/LetsTeachEnglish.png" class="img-fluid icon" alt="Let's Teach English Icon"></a>
+                    </div>
+                    <div class="col-lg-4 col-md-5 col-sm-12 text-center">
+                        <a href="let's learn english level 1/learnEng01.html"><img src="assets/LetsLearnEnglish_lvl1.png" class="img-fluid icon" alt="Let's Learn English Level 01 Icon"></a>
+                    </div>
+                    <div class="col-lg-4 col-md-5 col-sm-12 text-center">
+                        <a href="let's learn english level 2/learnEng02.html"><img src="assets/LetsLearnEnglish_lvl2.png" class="img-fluid icon" alt="Let's Learn English Level 02 Icon"></a>
+                    </div>
+                    <div class="col-lg-12 col-md-5 col-sm-12 text-center" id="marginUp">
+                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+                            Track my Progress
+                        </button>
+
+                        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog" role="document">
+                              <div class="modal-content">
+                                <div class="modal-header">
+                                  <h5 class="modal-title" id="exampleModalLabel">Track my Progress</h5>
+                                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                  </button>
+                                </div>
+                                <div class="modal-body">
+                                    <form>
+                                        <div class="form-group">
+                                          <label for="username" class="col-form-label">Enter your Name</label>
+                                          <input type="text" class="form-control" id="username">
+                                        </div>
+                                      </form>
+                                </div>
+                                <div class="modal-footer">
+                                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                  <button type="button" id="btn-track-progress" class="btn btn-primary">Start/Resume Course</button>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                    </div>
+                </div>
+            </article>
+            <script src="bootstrap/bootstrap-4.5.3-dist/js/jquery-3.5.1.slim.min.js"></script>
+            <script src="bootstrap/bootstrap-4.5.3-dist/js/popper.min.js"></script>
+            <script src="bootstrap/bootstrap-4.5.3-dist/js/bootstrap.min.js"></script>
+        </main>
+        <script>
+          $( "#btn-track-progress" ).click(function() {
+            var username = $('#username').val();
+            $.ajax({
+              url: "backend/create_session.php",
+              type: "get", //send it through get method
+              data: { 
+                username: username
+              },
+              success: function(response) {
+                url = response['url'];
+                location.assign(response['url']);
+              },
+              error: function(xhr) {
+                //Do Something to handle error
+              }
+            });
+          });
+        </script>
+        <script src="js/footer.js"></script>
+    </body>
+</html>

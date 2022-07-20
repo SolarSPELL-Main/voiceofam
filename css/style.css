@@ -1,0 +1,197 @@
+header, footer {
+    background-color: #0676D8;
+}
+
+
+nav li {
+    margin-left: 1em;
+    margin-right: 1em;
+    text-align: center;
+}
+
+.nav-img{
+    height: auto;
+    width: auto;
+    max-height: 2.5em;
+}
+
+nav a {
+    font-family: Arial, sans-serif;
+    font-size: 22px;
+}
+
+#navItems {
+    align-content: right;
+}
+
+body {
+    background-color: #78BE20;
+}
+
+#bottomMargin {
+    margin-bottom: 5.8em;
+}
+
+article {
+    padding-bottom: 1em;
+}
+
+h1 {
+    text-align: center;
+    background-color: #FFC627;
+    color: black; 
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    margin: 25px;
+    padding-top: 0.2em;
+    padding-bottom: 0.2em;
+    font-size: 1.95em;
+}
+
+.icon {
+    width: 75%;
+}
+
+#marginUp {
+    margin-top: 7.5em;
+}
+
+.sect {
+    width: auto;
+    margin: 2em 1em 1em 1em;
+    
+}
+
+section {
+    width: 100%;
+    padding: 1em;
+    display: block;
+    background-color: white;
+}
+
+.lessonWidth {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.borderBottom {
+    border-bottom: 2px solid #000000;
+}
+
+.VOAh1 {
+    color: #41ACE9;
+    width: 100%;
+    padding: 10px 10px 10px 30px;
+    font-size: 5vw;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 500;
+    line-height: 1.2;
+}
+
+h2 {
+    font-size: 1.8em;
+}
+
+h3 {
+    font-size: 1.6em;
+}
+
+h2, h3 {
+    width: 100%;
+    padding: 10px 10px 10px 30px;
+    margin: 0 0 10px;
+    text-align: center;
+}
+
+.VOAsmaller {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 1.25em;
+}
+
+.VOAvideo {
+    height: auto;
+    text-align: center;
+}
+
+.VOAvidwrapper {
+    width: 90%;
+    height: 90%;
+    display: inline-block;
+    vertical-align: baseline;
+    box-sizing: border-box;
+    object-fit: contain;
+}
+
+.VOAul {
+    list-style-type: square;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.VOAli {
+    width: 100%;
+    padding: 10px 0px 0px 15px;
+    font-size: 1.25em;
+    box-sizing: border-box;
+}
+
+#sideBar {
+    display: block;
+    background-color: #0676D8;
+    backface-visibility: hidden;
+    overflow: scroll;
+}
+
+main div img {
+    margin-top: 5em;
+}
+
+.placement {
+    margin-top: 1em;
+    
+}
+
+.audioSect {
+    width: 90%;
+    border: 2px solid black;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    border-radius: 3%;
+}
+
+audio {
+    max-width: 100%;
+}
+
+#navBG {
+    background-color: white;
+}
+
+.wordTable {
+    margin: auto;
+    display: inline-table;
+    margin-top: 1em;
+    margin-bottom: 1.5em;
+}
+
+footer {
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+footer a, footer a:hover {
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+}
